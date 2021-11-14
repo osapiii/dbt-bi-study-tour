@@ -20,4 +20,4 @@ SELECT
     MD5(email) AS hashed_email, 
     country
 FROM
-    {{ ref('raw_crm_customers') }}
+    {{ ref('ex3_raw_crm_customers') }}

@@ -1,12 +1,3 @@
-
-/*
-    Welcome to your first dbt model!
-    Did you know that you can also configure models directly within SQL files?
-    This will override configurations stated in dbt_project.yml
-
-    Try changing "table" to "view" below
-*/
-
 {{ config(materialized='view') }}
 
 -- 【典型前処理① ルールベースの除外 - 定義】特定の顧客IDを除外する
