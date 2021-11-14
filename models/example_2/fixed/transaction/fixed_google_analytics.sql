@@ -21,7 +21,7 @@ SELECT
     channelGrouping,
     socialEngagementType
 FROM
-    {{ ref('ex3_raw_google_analytics') }}
+    {{ ref('raw_google_analytics') }}
 WHERE
     -- 【典型前処理① 期間絞り込み】古いセッションログの除外
     date > '2015-04-01'
