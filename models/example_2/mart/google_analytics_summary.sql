@@ -30,8 +30,8 @@ SELECT
     ---- 暗号化済みEメール
     ex3_fixed_crm_customers.hashed_email
 FROM
-    {{ ref('ex3_fixed_google_analytics') }} AS ex3_fixed_google_analytics
+    {{ ref('fixed_google_analytics') }} AS ex3_fixed_google_analytics
 LEFT OUTER JOIN
-    {{ ref('ex3_fixed_crm_customers') }} AS ex3_fixed_crm_customers
+    {{ ref('fixed_crm_customers') }} AS ex3_fixed_crm_customers
 ON
     ex3_fixed_google_analytics.clientId = ex3_fixed_crm_customers.id
